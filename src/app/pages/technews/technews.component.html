@@ -1,0 +1,31 @@
+<div class="main-container">
+    <mat-card>
+       
+            <ngx-spinner 
+            bdColor=" rgba(24, 23, 23, 0.541)"
+            template="<img src='https://media.giphy.com/media/LG6iQwU99l9Bu/giphy.gif' />"
+          >
+          </ngx-spinner>
+
+      <h1 style="text-transform: uppercase;font-weight: 500;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Technical News :</h1>
+      <div class="row">
+  
+          <div class="col-lg-3 col-xsm-12 p-2 shadow-cards" *ngFor='let tech of allTechNews'>
+              <mat-card >
+                  <img mat-card-image src="{{tech.urlToImage}}">	
+                  <mat-card-title>
+                      <h2>{{tech.title}}</h2>
+                  </mat-card-title>
+                  <mat-card-content>
+                      {{tech.description}}
+                  </mat-card-content>
+                  <mat-card-actions>
+                      <a class='btn btn-md btn-dark' href="{{tech.url}}"  target="_blank">Show More</a>
+                  </mat-card-actions>
+              </mat-card>
+          </div>
+  
+      </div>
+    </mat-card>
+  </div>
+  

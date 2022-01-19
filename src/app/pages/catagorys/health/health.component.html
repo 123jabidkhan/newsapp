@@ -1,0 +1,67 @@
+
+
+
+
+<div class="main-container">
+    
+    <mat-card>
+        <!-- spinner -->
+      <ngx-spinner 
+      bdColor=" rgba(24, 23, 23, 0.541)"
+      template="<img src='https://media.giphy.com/media/LG6iQwU99l9Bu/giphy.gif' />"
+    >
+    </ngx-spinner>
+       <!-- titel -->
+      <h1 style="text-transform: uppercase;font-weight: 500;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><span style="font-weight: 700;">Health News</span></h1>
+    
+      <!-- content -->
+      <div class="row">
+          <div class="col-lg-10">
+              <div class="row">
+              <div class="col-lg-4 col-xsm-12 p-2 shadow-cards" *ngFor='let newHead of indiaHealthNews'>
+                  <mat-card class="m-1">
+                      <img mat-card-image src="{{newHead.urlToImage}}">	
+                      <mat-card-title>
+                          <h2>{{newHead.title}}</h2>
+                      </mat-card-title>
+                      <mat-card-content>
+                          {{newHead.description}}
+                      </mat-card-content>
+                      <mat-card-actions>
+                          <a class='btn btn-md btn-dark' href="{{newHead.url}}"  target="_blank">Show More</a>
+                      </mat-card-actions>
+                  </mat-card>
+              </div>
+          </div>
+          </div>
+         
+          <div class="col-lg-2  sidebar" >
+              <ul class="side_links">
+                  <li class="sidelink_item">
+                  <a routerLink='/india/business'>Bussiness News</a>
+                  </li> 
+                  <li class='sidelink_item'>
+                      <a routerLink='/india/sports'>Sports News</a>
+                      </li>
+                      <li class='sidelink_item'>
+                          <a routerLink='/india/entertainment'>Entertainmnet News</a>
+                      </li>
+                          <li class='sidelink_item'>
+                              <a routerLink='/india/health'>Health News</a>
+                      </li>
+                      <li class='sidelink_item'>
+                          <a routerLink='/india/science'>Science News</a>
+                  </li>
+                  <li class='sidelink_item'>
+                      <a routerLink='/india/technology'>Technology News</a>
+              </li>
+              </ul>
+             
+          </div>
+  
+         
+  
+      </div>
+    </mat-card>
+  </div>
+  

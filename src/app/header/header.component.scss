@@ -1,0 +1,30 @@
+// p .navbar-brand {
+//     font-size:35px;
+//     margin-right: 10px;
+//     font-weight: 700;
+//     font-family:'Courier New', Courier, monospace ;
+// }
+.dropdown-menu{
+    width: 250px;
+}
+.dropdown-menu .dropdown-item{
+    padding: 15px;
+    border-bottom: 1PX SOLID white;
+}
+.dropdown-menu  .dropdown-item:hover{
+    background: #000;
+    transition: .5s ease-in-out;
+    border-left: 10px solid #cc3247;
+}
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    color:white;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+form input:focus{
+    box-shadow: none;
+}

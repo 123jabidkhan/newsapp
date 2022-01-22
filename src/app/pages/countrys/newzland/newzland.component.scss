@@ -9,8 +9,10 @@
 }
 .sidebar{
     background-color: rgba(0, 0, 0, 0.932);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    height: 95vh;
+    border-top:5px solid #cc3247;
 }
 .side_links{
     margin-top: 15px;
@@ -30,6 +32,10 @@ padding: 10px;
     text-decoration: none;
     color: #cc3247;
     transition: .3 ease-in-out;
+}
+
+.side_links .sidelink_item a:active{
+    color: green;
 }
 
 

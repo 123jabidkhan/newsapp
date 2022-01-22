@@ -21,7 +21,7 @@ export class EntertainmentComponent implements OnInit {
     setTimeout(() => {
       /** spinner ends after 5 seconds */
       this.spinner.hide();
-    }, 2000);
+    }, 1500);
    
     this.categoryServices.getIndiaEntertainment().subscribe((response:any) => {
       console.log("indiaEntertainmentNews >>",response.articles);

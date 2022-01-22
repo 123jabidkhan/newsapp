@@ -21,7 +21,7 @@ export class BusinessComponent implements OnInit {
     setTimeout(() => {
       /** spinner ends after 5 seconds */
       this.spinner.hide();
-    }, 2000);
+    }, 1500);
    
     this.categoryServices.getIndiaBussiness().subscribe((response:any) => {
       console.log("indiaBussinessNews >>",response.articles);

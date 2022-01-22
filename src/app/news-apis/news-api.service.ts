@@ -10,6 +10,14 @@ export class NewsApiService {
 
   constructor(private _http:HttpClient) { }
 
+
+
+  // get users
+  getAllUsers():Observable<any>{
+    const apiUrl = 'http://localhost:5000/users';
+    return this._http.get<any>(apiUrl);
+
+  }
 // country services
 
   // get all headlines of INDIA

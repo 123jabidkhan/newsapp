@@ -21,7 +21,7 @@ export class SportsComponent implements OnInit {
     setTimeout(() => {
       /** spinner ends after 5 seconds */
       this.spinner.hide();
-    }, 2000);
+    }, 1500);
    
     this.categoryServices.getIndiaSports().subscribe((response:any) => {
       console.log("indiaSportsNews >>",response.articles);

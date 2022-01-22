@@ -21,7 +21,7 @@ export class ScienceComponent implements OnInit {
     setTimeout(() => {
       /** spinner ends after 5 seconds */
       this.spinner.hide();
-    }, 2000);
+    }, 1500);
    
     this.categoryServices.getIndiaScience().subscribe((response:any) => {
       console.log("indiaScienceNews >>",response.articles);

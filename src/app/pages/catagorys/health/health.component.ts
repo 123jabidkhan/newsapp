@@ -21,7 +21,7 @@ export class HealthComponent implements OnInit {
     setTimeout(() => {
       /** spinner ends after 5 seconds */
       this.spinner.hide();
-    }, 2000);
+    }, 1500);
    
     this.categoryServices.getIndiaHealth().subscribe((response:any) => {
       console.log("indiaHealthNews >>",response.articles);

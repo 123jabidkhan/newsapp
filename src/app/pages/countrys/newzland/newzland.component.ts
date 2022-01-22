@@ -21,7 +21,7 @@ export class NewzlandComponent implements OnInit {
     setTimeout(() => {
       /** spinner ends after 5 seconds */
       this.spinner.hide();
-    }, 2000);
+    }, 1500);
    
     this.newsApiService.getALLNzHeadlines().subscribe((response:any) => {
       console.log("response >>",response.articles);

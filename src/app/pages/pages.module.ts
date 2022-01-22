@@ -5,13 +5,14 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
 import { NgxSpinnerModule } from "ngx-spinner";
-
+import 'ag-grid-enterprise';
 
 //news api services
 import { NewsApiService } from '../news-apis/news-api.service';
 
 // mat modules/
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 import { TechnewsComponent } from './technews/technews.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
@@ -26,7 +27,7 @@ import { HealthComponent } from './catagorys/health/health.component';
 import { ScienceComponent } from './catagorys/science/science.component';
 import { SportsComponent } from './catagorys/sports/sports.component';
 import { TechnologyComponent } from './catagorys/technology/technology.component';
-
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,8 @@ import { TechnologyComponent } from './catagorys/technology/technology.component
     MatTooltipModule,
     MatProgressSpinnerModule,
     NgxSpinnerModule,
+    MatButtonModule,
+    AgGridModule.withComponents([]),
     
     // mat modules
     MatCardModule,

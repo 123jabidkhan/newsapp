@@ -10,11 +10,12 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ReactiveFormsModule ,FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { AgGridModule } from 'ag-grid-angular';
 
 // services
 import { NewsApiService } from './news-apis/news-api.service';
 import { LoadingService } from './news-apis/loading.service';
-
+import 'ag-grid-enterprise';
 // mat modules
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -39,6 +40,8 @@ import {MatCardModule} from '@angular/material/card';
     FormsModule,
     HttpClientModule,
     NgxSpinnerModule,
+    AgGridModule.withComponents([]),
+
 
     // mat mdoules
     MatButtonModule,

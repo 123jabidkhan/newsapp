@@ -4,21 +4,34 @@
    </mat-card>
 </div>
 
-<!-- <div class="main-container">
+ <!-- <div class="main-container">
    <mat-card >
     <h2>ag-grid table :</h2>
     <h2>Total rows : <span class="text-danger">( {{rowData.length}} )</span></h2>
 
-   <button class="m-2" mat-raised-button (click)="getSelectedRows()" color='warn'>Get Selected Rows</button>
+    <div class="row">
+       <div class="col-12">
+         <button class="m-2" mat-raised-button (click)="getSelectedRows()" color='warn'>Get Selected Rows</button>
+         <button class="m-2" mat-raised-button (click)="updateAllRows()" color='warn'>update all rows</button>
+         <button class="m-2" mat-raised-button (click)="updateSingleRow()" color='warn'>update single row</button>
+         <button class="m-2" mat-raised-button (click)="updateSingleCell()" color='warn'>update single cell</button>
+         <button class="m-2" mat-raised-button (click)="clearRowsData()" color='warn'>Clear Data</button>
+
+   
+       </div>
+  
+    </div>
 
     <ag-grid-angular
     #agGrid
     style="width: 80%; height: 500px;"
     class="ag-theme-alpine"
+    [gridOptions]='gridOptions'
     [rowData]="rowData"
     [columnDefs]="columnDefs"
+    (gridReady)="onGridReady($event)"
     rowSelection="multiple"
 >
 </ag-grid-angular>
    </mat-card>
-</div> -->
+</div>  -->

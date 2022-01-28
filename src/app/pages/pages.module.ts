@@ -28,6 +28,7 @@ import { ScienceComponent } from './catagorys/science/science.component';
 import { SportsComponent } from './catagorys/sports/sports.component';
 import { TechnologyComponent } from './catagorys/technology/technology.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { CustomCellComponent } from './custom-cell/custom-cell.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { AgGridModule } from 'ag-grid-angular';
     HealthComponent,
     ScienceComponent,
     SportsComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    CustomCellComponent
   ],
   imports: [
     CommonModule,
@@ -59,6 +61,7 @@ import { AgGridModule } from 'ag-grid-angular';
     MatExpansionModule
   ],
   providers: [NewsApiService],
+  entryComponents:[CustomCellComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class PagesModule { }
